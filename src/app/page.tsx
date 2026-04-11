@@ -36,7 +36,7 @@ export default async function HomePage() {
             </div>
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white leading-[1.05] tracking-tight animate-slide-up">
               Premium Cocoa &<br />
-              <span className="gradient-text">Chocolate Products</span>
+              <span className="text-white/90">Chocolate Products</span>
             </h1>
             <p className="mt-8 text-lg md:text-xl text-white/60 max-w-xl leading-relaxed animate-slide-up" style={{ animationDelay: "200ms", animationFillMode: "both" }}>
               From bean to perfection. ALCAO delivers world-class cocoa products and chocolate
