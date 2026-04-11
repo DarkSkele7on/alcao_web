@@ -9,7 +9,15 @@ export default async function ProductsPage() {
 
   return (
     <div>
-      <h2 className="text-2xl font-bold text-gray-900 mb-6">Products</h2>
+      <div className="flex items-center justify-between mb-6">
+        <h2 className="text-2xl font-bold text-gray-900">Products</h2>
+        <Link
+          href="/admin/products/new"
+          className="px-4 py-2 bg-[#702E3E] text-white rounded hover:bg-[#5a2532] transition-colors text-sm"
+        >
+          + Add Product
+        </Link>
+      </div>
 
       <div className="bg-white rounded-lg shadow overflow-hidden">
         <div className="overflow-x-auto">
