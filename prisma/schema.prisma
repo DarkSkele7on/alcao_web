@@ -1,0 +1,99 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Category {
+  id          String    @id @default(cuid())
+  name        String
+  slug        String    @unique
+  description String?
+  image       String?
+  parentId    String?
+  parent      Category? @relation("CategoryChildren", fields: [parentId], references: [id])
+  children    Category[] @relation("CategoryChildren")
+  products    Product[]
+  sortOrder   Int       @default(0)
+  createdAt   DateTime  @default(now())
+}
+
+model Product {
+  id           String      @id @default(cuid())
+  sku          String?
+  name         String
+  slug         String      @unique
+  description  String?
+  price        Float
+  salePrice    Float?
+  categoryId   String
+  category     Category    @relation(fields: [categoryId], references: [id])
+  images       String
+  weight       String?
+  form         String?
+  variety      String?
+  fatPercent   String?
+  minCocoa     String?
+  quantity     String?
+  additional   String?
+  featured     Boolean     @default(false)
+  inStock      Boolean     @default(true)
+  createdAt    DateTime    @default(now())
+  orderItems   OrderItem[]
+}
+
+model Order {
+  id            String      @id @default(cuid())
+  stripeId      String?     @unique
+  customerEmail String
+  customerName  String
+  address       String
+  city          String
+  postalCode    String
+  country       String
+  phone         String?
+  status        String      @default("pending")
+  subtotal      Float
+  shipping      Float
+  total         Float
+  items         OrderItem[]
+  createdAt     DateTime    @default(now())
+}
+
+model OrderItem {
+  id        String  @id @default(cuid())
+  orderId   String
+  order     Order   @relation(fields: [orderId], references: [id])
+  productId String
+  product   Product @relation(fields: [productId], references: [id])
+  quantity  Int
+  price     Float
+}
+
+model ContactSubmission {
+  id        String   @id @default(cuid())
+  name      String
+  email     String
+  company   String?
+  subject   String
+  message   String
+  read      Boolean  @default(false)
+  createdAt DateTime @default(now())
+}
+
+model Recipe {
+  id          String   @id @default(cuid())
+  title       String
+  slug        String   @unique
+  description String
+  image       String
+  time        String
+  difficulty  String
+  ingredients String
+  steps       String
+  products    String
+  createdAt   DateTime @default(now())
+}
