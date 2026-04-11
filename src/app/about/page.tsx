@@ -20,7 +20,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative bg-gradient-to-br from-[#702E3E] via-[#5a2432] to-[#3d1520] py-24 hero-pattern overflow-hidden">
+      <section className="relative py-24 hero-pattern overflow-hidden" style={{ background: "linear-gradient(to bottom right, #702E3E, #5a2432, #3d1520)" }}>
         <div className="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl" />
         <div className="absolute bottom-10 left-10 w-64 h-64 bg-[#f0c8d0]/5 rounded-full blur-3xl animate-float" />
         <div className="relative max-w-7xl mx-auto px-4">

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="bg-gradient-to-b from-[#702E3E] to-[#3d1520] text-white mt-auto relative overflow-hidden">
+    <footer className="text-white mt-auto relative overflow-hidden" style={{ background: "linear-gradient(to bottom, #702E3E, #3d1520)" }}>
       {/* Decorative elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-white/3 rounded-full blur-3xl" />
       <div className="absolute bottom-0 left-0 w-64 h-64 bg-white/2 rounded-full blur-3xl" />

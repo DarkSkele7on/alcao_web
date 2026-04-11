@@ -30,7 +30,7 @@ export default function Header() {
   return (
     <header className={`bg-white sticky top-0 z-50 transition-shadow duration-300 ${scrolled ? "shadow-lg shadow-black/5" : "border-b border-gray-100"}`}>
       {/* Top bar */}
-      <div className="bg-gradient-to-r from-[#702E3E] via-[#5a2432] to-[#702E3E] text-white text-sm py-2">
+      <div className="bg-[#702E3E] text-white text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 flex justify-between items-center">
           <span className="flex items-center gap-1.5 text-white/90">
             <span>Free shipping on orders over &euro;150</span>
@@ -123,7 +123,7 @@ export default function Header() {
             >
               <ShoppingCart size={22} />
               {totalItems > 0 && (
-                <span className="absolute -top-0.5 -right-0.5 bg-gradient-to-r from-[#702E3E] to-[#8a3a4e] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold shadow-sm animate-scale-in">
+                <span className="absolute -top-0.5 -right-0.5 bg-[#702E3E] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center font-bold shadow-sm animate-scale-in">
                   {totalItems}
                 </span>
               )}

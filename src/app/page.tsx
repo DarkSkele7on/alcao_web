@@ -22,7 +22,7 @@ export default async function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-[#702E3E] via-[#5a2432] to-[#3d1520] overflow-hidden hero-pattern min-h-[85vh] flex items-center">
+      <section className="relative overflow-hidden hero-pattern min-h-[85vh] flex items-center" style={{ background: "linear-gradient(to bottom right, #702E3E, #5a2432, #3d1520)" }}>
         <div className="absolute top-20 right-20 w-[500px] h-[500px] bg-white/[0.03] rounded-full blur-3xl animate-float" />
         <div className="absolute -bottom-20 -left-20 w-[600px] h-[600px] bg-[#f0c8d0]/[0.04] rounded-full blur-3xl" style={{ animation: "float 8s ease-in-out infinite reverse" }} />
         <div className="absolute top-1/3 right-1/3 w-32 h-32 bg-white/[0.02] rounded-full blur-xl animate-float" />
@@ -166,7 +166,7 @@ export default async function HomePage() {
 
       {/* Recipes CTA */}
       <section className="max-w-7xl mx-auto px-4 py-16">
-        <div className="relative bg-gradient-to-br from-[#702E3E] via-[#5a2432] to-[#3d1520] rounded-3xl overflow-hidden hero-pattern">
+        <div className="relative rounded-3xl overflow-hidden hero-pattern" style={{ background: "linear-gradient(to bottom right, #702E3E, #5a2432, #3d1520)" }}>
           <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full blur-3xl" />
           <div className="absolute bottom-0 left-1/4 w-48 h-48 bg-[#f0c8d0]/5 rounded-full blur-2xl" />
           <div className="grid md:grid-cols-2">
