@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma generate && npx prisma db push && npx tsx prisma/seed.ts && next build",
+    "build": "npx prisma generate && npx prisma db push && npx tsx prisma/seed.ts && npx @opennextjs/cloudflare build",
     "start": "next start",
     "lint": "eslint",
     "seed": "npx tsx prisma/seed.ts"
@@ -22,6 +22,7 @@
     "stripe": "^22.0.1"
   },
   "devDependencies": {
+    "@opennextjs/cloudflare": "latest",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
