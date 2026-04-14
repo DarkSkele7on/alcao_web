@@ -1,10 +1,16 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 120" width="240" height="120">
-  <!-- Left rectangle -->
-  <rect x="20" y="15" width="110" height="100" fill="#702E3E" rx="2"/>
-  <!-- Right rectangle (overlapping) -->
-  <rect x="80" y="5" width="140" height="105" fill="#702E3E" rx="2"/>
-  <!-- Overlap area creates depth -->
-  <rect x="80" y="15" width="50" height="95" fill="#5a2432" rx="0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 716 576" width="716" height="576">
+  <!-- Left quadrilateral -->
+  <polygon points="68,78 352,68 332,476 50,487" fill="#7B2D3E"/>
+  <!-- Right quadrilateral -->
+  <polygon points="272,22 650,37 645,448 258,462" fill="#7B2D3E"/>
+  <!-- Overlap shadow -->
+  <polygon points="272,68 352,68 332,476 258,462" fill="#612336"/>
   <!-- ALCAO text -->
-  <text x="120" y="85" font-family="Arial, Helvetica, sans-serif" font-size="52" font-weight="900" fill="white" text-anchor="middle" letter-spacing="-1">ALCAO</text>
+  <text x="370" y="340"
+        font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+        font-size="185"
+        font-weight="900"
+        fill="white"
+        text-anchor="middle"
+        letter-spacing="3">ALCAO</text>
 </svg>

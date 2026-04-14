@@ -51,7 +51,7 @@ export default function Header() {
           {/* Logo */}
           <Link href="/" className="flex-shrink-0">
             <Image
-              src="/images/alcao-logo.jpg"
+              src="/images/alcao-logo.svg"
               alt="ALCAO"
               width={120}
               height={60}
