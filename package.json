@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npx prisma generate && npx @opennextjs/cloudflare build",
+    "build": "npx prisma generate && next build && npx @opennextjs/cloudflare build --skip-next-build",
     "start": "next start",
     "lint": "eslint",
     "seed": "npx tsx prisma/seed.ts"
