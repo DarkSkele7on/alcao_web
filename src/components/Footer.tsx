@@ -14,7 +14,7 @@ export default function Footer() {
           {/* About */}
           <div>
             <Image
-              src="/images/alcao-logo.svg"
+              src="/images/alcao-logo.jpg"
               alt="ALCAO"
               width={100}
               height={50}
