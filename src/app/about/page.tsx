@@ -65,7 +65,7 @@ export default function AboutPage() {
           </div>
           <div className="relative h-80 md:h-[480px] rounded-3xl overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100 shadow-2xl shadow-black/5 border border-gray-100">
             <Image
-              src="/images/alcao-logo.svg"
+              src="/images/alcao-logo.jpg"
               alt="ALCAO"
               fill
               className="object-contain p-16"
