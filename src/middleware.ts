@@ -9,7 +9,7 @@ function validateToken(token: string): boolean {
   return token === expected;
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Only protect /admin routes (not /api/admin/auth which is the login endpoint)
@@ -34,7 +34,6 @@ export function proxy(request: NextRequest) {
     }
 
     // For admin pages, let the layout handle showing the login form
-    // We pass a header so the layout knows auth failed
     const response = NextResponse.next();
     response.headers.set("x-admin-auth", "false");
     return response;
