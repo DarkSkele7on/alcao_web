@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Clock, ChefHat, ArrowLeft, Users } from "lucide-react";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 type Props = { params: Promise<{ slug: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

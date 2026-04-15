@@ -3,6 +3,8 @@ import ProductCard from "@/components/ProductCard";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+export const dynamic = "force-dynamic";
+
 export const metadata: Metadata = {
   title: "Shop All Products",
   description: "Browse ALCAO's full range of premium cocoa products and chocolate.",

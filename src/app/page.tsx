@@ -4,6 +4,8 @@ import { ArrowRight, Truck, Shield, Award, Sparkles } from "lucide-react";
 import { prisma } from "@/lib/db";
 import ProductCard from "@/components/ProductCard";
 
+export const dynamic = "force-dynamic";
+
 const categories = [
   { name: "Chocolate", slug: "chocolate", image: "/images/products/alt45darkcouverture200.avif", description: "Couverture, drops, coins & more" },
   { name: "Cocoa", slug: "cocoa", image: "/images/products/N10-12 25.avif", description: "Powder, butter, nibs & mass" },
