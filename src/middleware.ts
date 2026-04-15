@@ -9,7 +9,7 @@ function validateToken(token: string): boolean {
   return token === expected;
 }
 
-export function proxy(request: NextRequest) {
+export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Only protect /admin routes (not /api/admin/auth which is the login endpoint)
